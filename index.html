@@ -3,16 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Titre de la page</title>
-  <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+  <title>Booki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d1faad8e12.js" crossorigin="anonymous"></script>  <link rel="stylesheet" href="styles/style.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
   </style>
 </head>
 <body>
-  ...
-  <!-- Le reste du contenu -->
-  ...
+
+<header>
+<div id="logoNavContener">
+  <img src="ASSETS/logo/Booki.png" />
+  <nav id="menuPrincipal">
+    <ul>
+      <li><a href="#">Hébergements</a></li>
+      <li><a href="#">Activités</a></li>
+    </ul>
+  </nav>
+</div>
+<div id="sloganContener">
+  <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+  <h3>en plein centre ville ou en pleine nature</h3>
+</div>
+<div id="rechercheContener">
+  <div id="searchEngine">
+  <div class="icones"><i class="fas fa-map-marker-alt"></i></div>
+  <input type="text" value="Marseille, France" id="localisation" name="localisation" class="texteSousTitreGras"/>
+  <button id="submitSearchButton" type="submit"><span id="textButtonSubmit">Rechercher</span><span id="iconButtonSubmit"><i class="fa-solid fa-magnifying-glass"></i></span></button>
+  </div>
+</div>
+<div id="filtresTotalContener">
+  <span class="texteSousTitreGras">Filtres</span>
+<div id="filtresContener">
+  <div class="categorieLogement texteSousTitreGras"><div class="iconesFiltres"><i class="fa-solid fa-money-bill-1-wave"></i></div><div class="nomFiltres">économique</div></div>
+  <div class="categorieLogement texteSousTitreGras"><div class="iconesFiltres"><i class="fa-solid fa-child-reaching"></i></div><div class="nomFiltres">familial</div></div>
+  <div class="categorieLogement texteSousTitreGras"><div class="iconesFiltres"><i class="fa-solid fa-heart"></i></div><div class="nomFiltres">romantique</div></div>
+  <div class="categorieLogement texteSousTitreGras"><div class="iconesFiltres"><i class="fa-solid fa-dog"></i></div><div class="nomFiltres">animaux autorisés</div></div>
+</div>
+</div>
+<div id="infoBulleContener">
+  <div class="iconInfo"><i class="fa-solid fa-info"></i></div>
+  <span>Plus de 500 logements sont disponibles dans cette ville</span>
+</div>
+</header>
+
+<section></section>
+<section></section>
+<footer></footer>
 </body>
 </html>
