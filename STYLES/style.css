@@ -10,7 +10,20 @@
 
  /* Boites principales entete */
 body {
-    margin: 0 2%;
+    margin: 0;
+}
+
+header {
+    margin:0 2%;
+}
+
+main {
+    margin: 0 2% 4% 2%;
+}
+
+footer {
+    margin:0;
+    padding:2%;
 }
 
 #logoNavContener {
@@ -107,7 +120,7 @@ body {
 }
 
 .activites .titreSection {
-    padding: 2% 0;
+    padding: 5%;
 }
 
 .listActivites {
@@ -129,6 +142,20 @@ body {
     height: 100%;
 }
 
+/* boites principales footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    width:100%;
+}
+
+.blocFooter {
+    flex-basis: 33%;
+}
+
 /* boites principales responsive */
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
@@ -141,6 +168,10 @@ body {
 @media only screen and (max-width:767px) {
     body {
         margin:0;
+    }
+
+    main {
+        margin:0 0 4% 0;
     }
 
     #logoNavContener {
@@ -196,6 +227,10 @@ body {
     }
     .listActivites img {
         height: 120px !important;
+    }
+    footer {
+        flex-direction: column;
+        padding:6%;
     }
 }
 
@@ -324,7 +359,6 @@ nav ul a {
 #logoNavContener img {
     width:100px;
     margin-top:1%;
-    margin-left:1%;
 }
 
 nav ul li {
@@ -399,7 +433,7 @@ nav ul li {
 }
 
 .cardHebergements div div {
-    padding: 0 5%;
+    padding: 0;
 }
 
 .imageCardHebergement {
@@ -479,31 +513,9 @@ nav ul li {
     height:160px;
 }
 
-/*
-
-.listActivites a:nth-child(1) .cardActivites img {
-    height:350px;
+footer {
+    background-color: #f2f2f2;
 }
-
-.listActivites a:nth-child(2) .cardActivites img {
-    height:100px;
-}
-
-.listActivites a:nth-child(1) .cardActivites {
-    height:400px;
-}
-
-.listActivites a:nth-child(2) .cardActivites {
-    height:150px;
-}
-
-.listActivites a:nth-child(3) .cardActivites img {
-    height:200px;
-}
-
-.listActivites a:nth-child(3) .cardActivites {
-    height:250px;
-} */
 
 @media only screen and (max-width:767px) {
     #logoNavContener img {
@@ -683,6 +695,28 @@ section a:hover {
     filter: blur(0.8px);
 }
 
+.blocFooter {
+    line-height: 20pt;
+}
+
+.titreBlocFooter {
+    font-weight: bold;
+    font-size: small;
+    line-height: 32pt;
+}
+
+.contenuBlocFooter ul {
+    margin:0;
+    padding-inline-start: 0;
+    list-style-type: none;
+    font-size: small;
+}
+
+.contenuBlocFooter a {
+    text-decoration: none;
+    color:black;
+}
+
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
     .iconesFiltres {
@@ -691,7 +725,14 @@ section a:hover {
 }
 
 @media only screen and (max-width:767px) {
-    #menuPrincipal li:first-child {
+    #menuPrincipal a {
+        text-decoration: none;
+        color:grey;
+        font-weight: 400;
+    }
+    
+    #menuPrincipal a:hover {
+        color:#0065FC;
         border-top:none;
         border-bottom:solid 2px #0065FC;
     }
@@ -706,8 +747,20 @@ section a:hover {
         padding:12px;
         margin-top: -2.5px;
     }
+
+    .legendCardHebergements {
+        padding:15px;
+    }
+    
     .cardActivites .cardTitre {
-        padding: 4px;
+        padding: 4px 15px;
     }
 
+    .titreBlocFooter {
+        line-height: 22pt;
+    }
+    .blocFooter {
+        line-height: 18pt;
+        padding: 2% 4%;
+    }
 }
