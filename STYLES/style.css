@@ -68,17 +68,17 @@ footer {
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: stretch;
 }
 
 .listHebergementsContener {
     flex-basis:62%;
-    height: 500px;
 }
 
 .listPopulairesHebergementsContener {
     flex-basis: 35%;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -104,7 +104,7 @@ footer {
 }
 
 .listPopulairesHebergements a {
-    margin:1%;
+    margin: 2% 1%;
     width:94%;
 }
 
@@ -161,7 +161,7 @@ footer {
 
 @media only screen and (min-width:768px) and (max-width:993px) {
     .listHebergementsContener, .listPopulairesHebergementsContener {
-        height:100%;
+        margin: 0 0 auto 0;
     }
     .listHebergements a {
         margin:1%;
@@ -189,7 +189,6 @@ footer {
      #filtresContener {
         justify-content: center;
      }  
-
      .hebergements {
         margin:0 !important;
      }
@@ -197,8 +196,7 @@ footer {
         flex-basis:100%;
         background-color: white !important;
         height:100%;
-    }
-    
+    }    
     .listPopulairesHebergementsContener {
         flex-basis: 100%;
         margin:5% 0;
@@ -214,7 +212,6 @@ footer {
         width:90vw;
         flex-basis:100%;
     }
-
    .listPopulairesHebergements a {
         margin:1%;
         width:90vw;
@@ -246,7 +243,7 @@ nav {
     flex-basis:70%;
 }
 
-nav ul {
+nav {
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -254,7 +251,7 @@ nav ul {
     margin:0;
 }
 
-nav ul li {
+nav a {
     padding: 2% 3%;
     text-align: center;
 }
@@ -303,7 +300,6 @@ nav ul li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height:110px;
 }
 
 .cardHebergements .legendCardHebergements {
@@ -332,10 +328,10 @@ nav ul li {
  }
 
 @media only screen and (max-width:767px) {
-    nav ul {
+    nav {
         justify-content: space-around;
     }
-    nav ul li {
+    nav a {
         flex-basis: 50%;
     }
     #sloganContener {
@@ -367,9 +363,7 @@ nav ul li {
     margin-top:1%;
 }
 
-nav ul li {
-    list-style-type: none;
-}
+
 
 .icones {
     background-color: #f2f2f2;
@@ -409,6 +403,12 @@ nav ul li {
     border: solid 3px #f2f2f2;
     border-radius: 25px;
     margin:7px;
+}
+
+.categorieLogement:hover {
+    background-color: #DEEBFF;
+    border: solid 3px #DEEBFF;
+    color: #0065FC;
 }
 
 #filtresContener {
@@ -461,7 +461,6 @@ nav ul li {
     border-top-left-radius:15px;
     border-bottom-left-radius:15px;
     object-fit:cover;
-    flex-basis: 33%;
 }
 .cardHebergements .legendCardHebergements div {
     margin:2% 0;
@@ -585,21 +584,21 @@ h1, h2, h3, h4, h5, h6 {
     margin:0;
 }
 
-#menuPrincipal li {
+#menuPrincipal a {
     border: solid 2px transparent;
 }
 
-#menuPrincipal li a {
+#menuPrincipal a {
     text-decoration: none;
     color:grey;
     font-weight: 400;
 }
 
-#menuPrincipal li:hover {
+#menuPrincipal a:hover {
     border-top:solid 2px #0065FC;
 }
 
-#menuPrincipal li a:hover {
+#menuPrincipal a:hover {
     color:#0065FC;
 }
 
@@ -724,14 +723,16 @@ section a:hover {
     line-height: 32pt;
 }
 
-.contenuBlocFooter ul {
+.contenuBlocFooter {
+    display: flex;
+    flex-direction: column;
     margin:0;
     padding-inline-start: 0;
     list-style-type: none;
     font-size: small;
 }
 
-.contenuBlocFooter li a {
+.contenuBlocFooter a {
     text-decoration: none;
     color:black;
 }
@@ -744,17 +745,26 @@ section a:hover {
 }
 
 @media only screen and (max-width:767px) {
-    #menuPrincipal li a {
+    #menuPrincipal a {
+        border: solid 2px transparent;
+    }
+    
+    #menuPrincipal a {
         text-decoration: none;
         color:grey;
         font-weight: 400;
+        padding-bottom:12px;
     }
     
-    #menuPrincipal li a:hover {
-        color:#0065FC;
+    #menuPrincipal a:hover {
+        color: #0065FC;
         border-top:none;
         border-bottom:solid 2px #0065FC;
     }
+    
+    #menuPrincipal a:hover {
+        color:#0065FC;
+    }    
     .iconInfo {
         width:40px;
     }
