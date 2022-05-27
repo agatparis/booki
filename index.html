@@ -7,32 +7,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d1faad8e12.js" crossorigin="anonymous"></script>  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://kit.fontawesome.com/d1faad8e12.js" crossorigin="anonymous"></script> 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-  </style>
+  </style> 
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="normalize.css">
+
 </head>
 <body>
 
 <header>
-<div id="logoNavContener">
-  <img alt="logo booki" src="ASSETS/logo/Booki@3x.png" />
-  <nav id="menuPrincipal">
-    <a href="#ancreHebergements">Hébergements</a>
-    <a href="#ancreActivites">Activités</a>
-  </nav>
-</div>
-<div id="sloganContener">
-  <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-  <h3>En plein centre ville ou en pleine nature</h3>
-</div>
+  <div id="logoNavContener">
+    <img alt="logo booki" src="ASSETS/logo/Booki@3x.png" />
+    <nav id="menuPrincipal">
+      <a href="#ancreHebergements">Hébergements</a>
+      <a href="#ancreActivites">Activités</a>
+    </nav>
+  </div>
+  <div id="sloganContener">
+    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+    <h3>En plein centre ville ou en pleine nature</h3>
+  </div>
 </header>
+
 <main>
 <div>
 <div id="rechercheContener">
   <div id="searchEngine">
-  <div class="icones"><i class="fas fa-map-marker-alt"></i></div>
   <form action="index.html" method="get" id="rechercheForm">
+  <i class="fas fa-map-marker-alt icones"></i>
   <input type="text" value="Marseille, France" id="localisation" name="localisation" class="texteSousTitreGras"/>
   <button id="submitSearchButton" value="submit" type="submit" form="rechercheForm"><span id="textButtonSubmit">Rechercher</span><span id="iconButtonSubmit"><i class="fa-solid fa-magnifying-glass"></i></span></button>
   </form>
@@ -221,7 +225,7 @@
     <a href="#">Fonctionnement du site</a>
     <a href="#">Conditions générales de vente</a>
     <a href="#">Données et confidentialité</a>
-    </ul>
+
   </div>
 </div>
 <div class="blocFooter">
