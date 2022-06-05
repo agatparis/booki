@@ -33,8 +33,8 @@
 
 <section id="rechercheConteneur">
   <div id="searchEngine">
-    <form action="index.html" method="get" id="rechercheForm">
-      <i class="fas fa-map-marker-alt icones"></i>
+      <form action="index.html" method="get" id="rechercheForm">
+      <button id="localisation" class="icones"><i class="fas fa-map-marker-alt"></i></button>
       <input type="text" value="Marseille, France" id="localisation" name="localisation" class="texteSousTitreGras"/>
       <button id="submitSearchButton" value="submit" type="submit" form="rechercheForm">
         <span id="textButtonSubmit">Rechercher</span>
@@ -49,17 +49,43 @@
   <div id="filtresTotalConteneur">
     <span class="texteSousTitreGras">Filtres</span>
     <div id="filtresConteneur">
-      <div class="categorieLogement texteSousTitreGras"><div class="iconesFiltres"><i class="fa-solid fa-money-bill-1-wave"></i></div><div class="nomFiltres">économique</div></div>
-      <div class="categorieLogement texteSousTitreGras"><div class="iconesFiltres"><i class="fa-solid fa-child-reaching"></i></div><div class="nomFiltres">familial</div></div>
-      <div class="categorieLogement texteSousTitreGras"><div class="iconesFiltres"><i class="fa-solid fa-heart"></i></div><div class="nomFiltres">romantique</div></div>
-      <div class="categorieLogement texteSousTitreGras"><div class="iconesFiltres"><i class="fa-solid fa-dog"></i></div><div class="nomFiltres">animaux autorisés</div></div>
+      <div class="filtres">          
+        <input type="checkbox" class="nomFiltres" id="eco"> 
+        <div class="categorieLogement">
+          <div class="iconesFiltres"><i class="fa-solid fa-money-bill-1-wave"></i>
+          </div>
+        <label class="texteSousTitreGras" for="eco">économique</label>
+        </div>
+      </div>
+      <div class="filtres">          
+        <input type="checkbox" class="nomFiltres" id="fami"> 
+        <div class="categorieLogement"><div class="iconesFiltres"><i class="fa-solid fa-child-reaching"></i>
+        </div>
+        <label class="texteSousTitreGras" for="fami">familial</label>
+      </div>
+      </div>
+      <div class="filtres">          
+        <input type="checkbox" class="nomFiltres" id="romant"> 
+        <div class="categorieLogement"><div class="iconesFiltres"><i class="fa-solid fa-heart"></i>
+        </div>
+        <label class="texteSousTitreGras" for="romant">romantique</label>
+      </div>
+      </div>
+      <div class="filtres">          
+        <input type="checkbox" class="nomFiltres" id="animo"> 
+        <div class="categorieLogement"><div class="iconesFiltres"><i class="fa-solid fa-dog"></i>
+        </div>
+        <label class="texteSousTitreGras" for="animo">animaux autorisés</label>
+      </div>
+      </div>
     </div>
   </div>
-
   <div id="infoBulleConteneur">
     <div class="iconInfo"><i class="fa-solid fa-info"></i></div>
     <span>Plus de 500 logements sont disponibles dans cette ville</span>
   </div>
+
+  
 </section>
 
 
@@ -313,3 +339,5 @@
 
 </body>
 </html>
+
+
